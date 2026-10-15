@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>新西兰旅游筹备 · 时间线 + 推荐线路</title>
+<style>
+  :root{
+    --bg:#0f1419; --panel:#19222b; --panel2:#202c38; --line:#2c3a47;
+    --txt:#e6edf3; --sub:#9fb0bf; --acc:#3fb98a; --acc2:#4aa3e0;
+    --warn:#e0a23a; --red:#e06a6a; --chip:#243240;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);
+    font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;
+    line-height:1.6;font-size:15px}
+  .wrap{max-width:980px;margin:0 auto;padding:24px 18px 60px}
+  h1{font-size:24px;margin:0 0 4px}
+  h2{font-size:18px;margin:26px 0 10px;padding-left:10px;border-left:4px solid var(--acc)}
+  h3{font-size:15.5px;color:var(--acc2);margin:16px 0 6px}
+  .sub{color:var(--sub);font-size:13px}
+  .hero{background:linear-gradient(135deg,#16302a,#10202c);border:1px solid var(--line);
+    border-radius:14px;padding:18px 22px;margin:16px 0}
+  .count{font-size:32px;font-weight:700;color:var(--acc)}
+  /* tabs */
+  .tabs{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 4px;position:sticky;top:0;
+    background:var(--bg);padding:10px 0;z-index:5;border-bottom:1px solid var(--line)}
+  .tab{background:var(--panel);color:var(--sub);border:1px solid var(--line);
+    border-radius:999px;padding:7px 14px;font-size:13.5px;cursor:pointer;transition:.15s}
+  .tab:hover{border-color:var(--acc2);color:var(--txt)}
+  .tab.on{background:var(--acc);color:#06281d;border-color:var(--acc);font-weight:700}
+  .pane{display:none;animation:fade .2s}
+  .pane.on{display:block}
+  @keyframes fade{from{opacity:0}to{opacity:1}}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:14px 0}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .card .k{font-size:12px;color:var(--sub);letter-spacing:.5px}
+  .card .v{font-size:16px;font-weight:600;margin-top:4px}
+  .card .d{font-size:12.5px;color:var(--sub);margin-top:6px}
+  .phase{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:6px 20px 16px;margin:14px 0}
+  .phase .ph{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding:14px 0 4px}
+  .ph .tag{background:var(--acc);color:#06281d;font-weight:700;border-radius:999px;padding:3px 12px;font-size:13px}
+  .ph .win{color:var(--acc2);font-weight:600;font-size:14px}
+  .ph .goal{color:var(--sub);font-size:13.5px}
+  table{width:100%;border-collapse:collapse;margin:8px 0 4px;font-size:14px}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--sub);font-weight:600;font-size:12.5px;background:var(--panel2)}
+  .pri{font-size:11px;font-weight:700;border-radius:6px;padding:1px 7px;white-space:nowrap}
+  .p1{background:#3a1f1f;color:#ff9b9b}
+  .p2{background:#3a2f15;color:#f1c779}
+  .p3{background:#1c2f3a;color:#8fcdf0}
+  ul{margin:6px 0;padding-left:20px}
+  li{margin:4px 0}
+  .note{background:var(--chip);border-left:4px solid var(--warn);border-radius:8px;padding:10px 14px;margin:12px 0;font-size:13.5px;color:#f0e2c8}
+  .fact{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:10px 0;font-size:13.5px}
+  .fact b{color:var(--acc)}
+  .chk{list-style:none;padding-left:0}
+  .chk li{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-bottom:1px solid var(--line)}
+  .chk input{margin-top:5px;accent-color:var(--acc)}
+  .chk .t{font-size:14px}
+  .chk .m{font-size:12px;color:var(--sub)}
+  .pill{display:inline-block;background:var(--chip);border:1px solid var(--line);
+    border-radius:999px;padding:2px 10px;font-size:12px;color:var(--sub);margin:2px 4px 2px 0}
+  .day{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:8px 0}
+  .day .dh{color:var(--acc2);font-weight:700;font-size:14px}
+  .day .dd{font-size:13.5px;color:var(--txt);margin-top:3px}
+  .drive{color:#7fd1a8;font-size:12.5px}
+  .bus{color:#8fcdf0;font-size:12.5px}
+  footer{color:var(--sub);font-size:12px;margin-top:36px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>🇳🇿 新西兰旅游筹备 · 时间线 + 推荐线路</h1>
+  <div class="sub">出行窗口：2026 年 12 月 11/12 日 → 19/20 日（南半球夏季，旺季）</div>
+
+  <div class="hero">
+    <div class="sub">距出发（12/11）还有</div>
+    <div class="count" id="count">—</div>
+    <div class="sub" style="margin-top:6px">⚠️ 12 月是新西兰暑期+学校假期（中旬起），机酒车全面涨价、库存紧张。<b style="color:var(--warn)">签证与机酒租车必须尽早启动</b>。</div>
+  </div>
+
+  <div class="tabs" id="tabs">
+    <div class="tab on" data-t="t1">① 旅游筹备时间线</div>
+    <div class="tab" data-t="t2">② 南岛线路·自驾</div>
+    <div class="tab" data-t="t3">③ 南岛线路·非自驾</div>
+    <div class="tab" data-t="t4">④ 北岛线路·自驾</div>
+    <div class="tab" data-t="t5">⑤ 北岛线路·非自驾</div>
+  </div>
+
+  <!-- ===================== TAB 1 ===================== -->
+  <div class="pane on" id="t1">
+    <div class="grid">
+      <div class="card"><div class="k">签证类型</div><div class="v">Visitor Visa 访客签证</div><div class="d">中国护照不在免签名单，NZeTA 不适用；2026/10/1 起仅线上申请</div></div>
+      <div class="card"><div class="k">签证费用 / 时长</div><div class="v">NZD $441 起</div><div class="d">80% 在 2 周内出签；材料齐可约 5 个工作日（旺季建议提前 1–2 月）</div></div>
+      <div class="card"><div class="k">驾照自驾</div><div class="v">中国驾照 + 认可翻译</div><div class="d">须 NZTA 认可翻译件 / 车管所 / 公证处译本；中国不出 IDP</div></div>
+      <div class="card"><div class="k">入境申报</div><div class="v">NZTD 旅行者申报</div><div class="d">出发前在线填写 New Zealand Traveller Declaration</div></div>
+    </div>
+
+    <div class="phase">
+      <div class="ph"><span class="tag">阶段 1</span><span class="win">10/15 – 10/25</span><span class="goal">签证启动 + 护照/资金体检 + 行程框架</span></div>
+      <table>
+        <tr><th style="width:34%">任务</th><th style="width:12%">优先级</th><th>要点 / 说明</th></tr>
+        <tr><td>检查护照有效期</td><td><span class="pri p1">必须</span></td><td>须 ≥ 离境后 3 个月有效；拍照页清晰、无破损</td></tr>
+        <tr><td><b>提交 Visitor Visa 在线申请</b></td><td><span class="pri p1">必须</span></td><td>immigration.govt.nz → Immigration Online；准备：护照扫描、近 6 月白底照、在职/收入证明、近 6 月银行流水+存款证明、行程计划、往返机票（可先出可退改的预订单）</td></tr>
+        <tr><td>预约生物信息采集</td><td><span class="pri p2">重要</span></td><td>部分申请需到签证中心录指纹/拍照；出签后发 eVisa（与护照绑定），<b>打印纸质版随身带</b></td></tr>
+        <tr><td>确定目的地与天数</td><td><span class="pri p2">重要</span></td><td>北岛 / 南岛 / 南北岛？决定落地机场与自驾路线（见本页各线路 Tab）</td></tr>
+        <tr><td>资金证明整理</td><td><span class="pri p2">重要</span></td><td>签证官重点看「有钱旅行 + 会回国」；流水稳定、余额充足</td></tr>
+      </table>
+      <div class="fact">💡 移民局建议：<b>签证获批前不要订不可退改的机票/住宿</b>。阶段 1 先交签、出「可免费退改」的机票占位单用于签证即可。</div>
+    </div>
+
+    <div class="phase">
+      <div class="ph"><span class="tag">阶段 2</span><span class="win">10/25 – 11/5</span><span class="goal">机票落定 + 签证跟进 + 行程细化</span></div>
+      <table>
+        <tr><th>任务</th><th>优先级</th><th>要点 / 说明</th></tr>
+        <tr><td><b>预订国际机票</b></td><td><span class="pri p1">必须</span></td><td>12 月旺季尽早锁价。国内→奥克兰(AKL) 或 基督城(CHC)/皇后镇(ZQN)（经澳/新转）。对比含税价、行李额、转机时长</td></tr>
+        <tr><td>签证进度跟踪 + 补件</td><td><span class="pri p1">必须</span></td><td>留意邮箱/账户电调或补材料请求，48h 内响应避免延误</td></tr>
+        <tr><td>细化每日行程骨架</td><td><span class="pri p2">重要</span></td><td>参考本页对应线路 Tab；自驾则规划落脚点间距（南岛山路多，单日驾驶勿超 4–5h）</td></tr>
+      </table>
+    </div>
+
+    <div class="phase">
+      <div class="ph"><span class="tag">阶段 3</span><span class="win">11/5 – 11/20</span><span class="goal">住宿 + 租车 + 驾照翻译 全部落定</span></div>
+      <table>
+        <tr><th>任务</th><th>优先级</th><th>要点 / 说明</th></tr>
+        <tr><td><b>预订住宿</b></td><td><span class="pri p1">必须</span></td><td>旺季房源紧，按行程逐站订；优先可免费取消。民宿(Airbnb/Bookabach)适合家庭</td></tr>
+        <tr><td><b>预订租车（自驾）</b></td><td><span class="pri p1">必须</span></td><td>早订选车自由。确认：取还车地点（机场）、车型、全险、自动挡、含中文 GPS/CarPlay</td></tr>
+        <tr><td><b>办理驾照英文翻译件</b></td><td><span class="pri p1">必须</span></td><td>NZTA 认可翻译机构 / 车管所英文件 / 公证处译本（100–150 元）。<b>勿买"国际驾照"——中国不出 IDP，无效</b></td></tr>
+        <tr><td>预研热门活动并占位</td><td><span class="pri p2">重要</span></td><td>峡湾游船、蒂卡波星空、皇后镇 adventure、凯库拉观鲸等，旺季易满</td></tr>
+        <tr><td>购买旅行保险</td><td><span class="pri p2">重要</span></td><td>签证要求覆盖全程医疗；含医疗运送、行李、行程取消/延误</td></tr>
+      </table>
+      <div class="fact">🚗 自驾提示：新西兰<b>靠左行驶</b>，山路窄弯多、限速严；必须随身带「中国驾照原件 + 认可翻译件」。</div>
+    </div>
+
+    <div class="phase">
+      <div class="ph"><span class="tag">阶段 4</span><span class="win">11/20 – 11/30</span><span class="goal">通信 / 货币 / 装备 / 申报 准备就绪</span></div>
+      <table>
+        <tr><th>任务</th><th>优先级</th><th>要点 / 说明</th></tr>
+        <tr><td>手机通信方案</td><td><span class="pri p2">重要</span></td><td>落地买 Spark/One NZ/2degrees 本地 SIM，或开通漫游；自驾备离线地图</td></tr>
+        <tr><td>货币与支付</td><td><span class="pri p2">重要</span></td><td>换少量 NZD 现金；带 Visa/Master 双币卡；告知银行出境以免锁卡</td></tr>
+        <tr><td>电源与插头</td><td><span class="pri p3">可选</span></td><td>新西兰用 Type I（三扁脚，230V）；带转换头 + 多口 USB</td></tr>
+        <tr><td>行李与装备</td><td><span class="pri p3">可选</span></td><td>夏季早晚温差大（南岛山区近 0℃）：分层衣物、防晒、墨镜、防风外套、徒步鞋、泳衣</td></tr>
+        <tr><td>填写 NZTD 申报 + 禁带核对</td><td><span class="pri p2">重要</span></td><td>出发前在线填 NZTD（入境前 24h 内）；生物安检极严，不确定就申报</td></tr>
+      </table>
+    </div>
+
+    <div class="phase">
+      <div class="ph"><span class="tag">阶段 5</span><span class="win">12/1 – 12/10</span><span class="goal">最终确认 + 行前收尾</span></div>
+      <table>
+        <tr><th>任务</th><th>优先级</th><th>要点 / 说明</th></tr>
+        <tr><td>核对所有预订</td><td><span class="pri p1">必须</span></td><td>机票、住宿、租车/活动确认单；记预订号与紧急电话</td></tr>
+        <tr><td>打印/离线存档</td><td><span class="pri p2">重要</span></td><td>签证批准信、行程单、保险单、驾照翻译件 PDF；存手机+纸质</td></tr>
+        <tr><td>离线地图与导航</td><td><span class="pri p3">可选</span></td><td>下载离线包；南岛部分路段无信号</td></tr>
+        <tr><td>证件财物分装 + 打包</td><td><span class="pri p2">重要</span></td><td>护照/签证/驾照/信用卡分开放；按出发前 3 天预报微调行李</td></tr>
+      </table>
+    </div>
+
+    <h2>📋 行前总清单（可勾选）</h2>
+    <ul class="chk">
+      <li><input type="checkbox"><div><div class="t">护照有效（≥离境后 3 个月）</div><div class="m">随时可用</div></div></li>
+      <li><input type="checkbox"><div><div class="t">Visitor Visa 已下签 + 打印 eVisa</div><div class="m">Immigration Online 可查</div></div></li>
+      <li><input type="checkbox"><div><div class="t">国际机票已出票</div><div class="m">含行李额、转机时间确认</div></div></li>
+      <li><input type="checkbox"><div><div class="t">各站住宿已订（可免费取消优先）</div><div class="m">记预订号/入住时间</div></div></li>
+      <li><input type="checkbox"><div><div class="t">租车已订 + 全险（自驾）</div><div class="m">取还车点、车型、自动挡确认</div></div></li>
+      <li><input type="checkbox"><div><div class="t">中国驾照 + NZTA 认可翻译件</div><div class="m">原件与译本同行携带</div></div></li>
+      <li><input type="checkbox"><div><div class="t">旅行保险已购（覆盖全程医疗）</div><div class="m">保存保单与救援电话</div></div></li>
+      <li><input type="checkbox"><div><div class="t">热门活动已预订</div><div class="m">峡湾/星空/观鲸等旺季易满</div></div></li>
+      <li><input type="checkbox"><div><div class="t">手机通信 + 离线地图</div><div class="m">自驾必备</div></div></li>
+      <li><input type="checkbox"><div><div class="t">NZTD 旅行者申报已填</div><div class="m">入境前 24h 内</div></div></li>
+      <li><input type="checkbox"><div><div class="t">现金 NZD + 双币信用卡 + 转换头</div><div class="m">告知银行出境</div></div></li>
+    </ul>
+
+    <h2>⚠️ 容易忽略但重要</h2>
+    <ul>
+      <li><b>时差</b>：新西兰比中国快 4–5 小时（夏令时 +5h，12 月为 NZDT）。</li>
+      <li><b>自驾安全</b>：靠左、环岛让右、单车道桥、动物出没；山路预留富余时间。</li>
+      <li><b>防晒</b>：南半球紫外线强，帽子墨镜防晒霜随身。</li>
+      <li><b>现金申报</b>：携带 ≥ 1 万纽币或等值外币须申报。</li>
+      <li><b>紧急电话</b>：报警/急救 111；中国领事保护 +86-10-12308。</li>
+    </ul>
+  </div>
+
+  <!-- ===================== TAB 2: 南岛自驾 ===================== -->
+  <div class="pane" id="t2">
+    <div class="fact"><b>南岛经典环线·自驾（9 天示例）</b> 落地基督城(CHC) 取车，顺时针环线：CHC → 蒂卡波 → 库克山 → 瓦纳卡 → 皇后镇 → 蒂阿瑙/米尔福德 → 返 CHC。适合的：想看雪山冰川峡湾、爱开车看风景。12 月鲁冰花季、峡湾游船旺季。</div>
+    <div class="day"><div class="dh">Day 1 · 抵达基督城</div><div class="dd">落地取车（机场租车柜台），市区逛大教堂广场/植物园，补给。<span class="drive">🚗 取车点：CHC 机场</span></div></div>
+    <div class="day"><div class="dh">Day 2 · 基督城 → 蒂卡波湖</div><div class="dd">沿途牧场风光，下午蒂卡波湖、好牧羊人教堂，晚观星（暗夜保护区）。<span class="drive">🚗 约 3h / 227km</span></div></div>
+    <div class="day"><div class="dh">Day 3 · 蒂卡波 → 库克山</div><div class="dd">胡克谷步道(Hooker Valley)徒步看雪山冰川，下午返回蒂卡波或住特威泽尔。<span class="drive">🚗 单程约 1h</span></div></div>
+    <div class="day"><div class="dh">Day 4 · 蒂卡波 → 瓦纳卡</div><div class="dd">经 Lindis Pass，瓦纳卡湖、"哇哦大树"、Puzzling World。<span class="drive">🚗 约 2.5h / 230km</span></div></div>
+    <div class="day"><div class="dh">Day 5 · 瓦纳卡 → 皇后镇</div><div class="dd">短驱抵达皇后镇，Skyline 缆车、箭镇(Arrowtown)淘金小镇。<span class="drive">🚗 约 1h / 68km</span></div></div>
+    <div class="day"><div class="dh">Day 6 · 皇后镇（冒险日）</div><div class="dd">蹦极、喷射快艇、跳伞或轻松湖游船；自由活动。<span class="drive">🚗 镇内</span></div></div>
+    <div class="day"><div class="dh">Day 7 · 皇后镇 → 蒂阿瑙 → 米尔福德峡湾</div><div class="dd">早出发经蒂阿瑙到米尔福德峡湾游船（瀑布悬崖），晚住蒂阿瑙。<span class="drive">🚗 皇后镇→蒂阿瑙 2h，蒂阿瑙→米尔福德 2h</span></div></div>
+    <div class="day"><div class="dh">Day 8 · 蒂阿瑙 → 皇后镇 → 返基督城</div><div class="dd">原路返皇后镇，还车可选：飞 ZQN→CHC（1h）或自驾回 CHC（约 6h，分两段更轻松）。<span class="drive">🚗 自驾约 6h 或 内陆段飞行</span></div></div>
+    <div class="day"><div class="dh">Day 9 · 基督城 → 回国</div><div class="dd">还车、前往机场。<span class="drive">🚗 还车点：CHC 机场</span></div></div>
+    <div class="note">米尔福德从皇后镇往返自驾约 4h 单程、路窄弯多易疲劳；若不想长距离自驾，可 Day7 报"皇后镇→米尔福德" coach+cruise 一日游（含导游，不自己开）。</div>
+    <h3>自驾贴士</h3>
+    <ul>
+      <li>靠左行驶；环岛让右；单车道桥按标志减速让行。</li>
+      <li>南岛加油站间隔远，油量过半就加；部分路段无信号，提前下离线地图。</li>
+      <li>旺季租车紧，车型选 SUV/轿车视路况；全程买全险更省心。</li>
+      <li>限速严（高速 100、城镇 50），测速多，宁慢勿快。</li>
+    </ul>
+  </div>
+
+  <!-- ===================== TAB 3: 南岛非自驾 ===================== -->
+  <div class="pane" id="t3">
+    <div class="fact"><b>南岛·非自驾（9 天示例）</b> 不自己开车，用<b>小镇为基地 + 一日游/观景火车/长途大巴</b>覆盖亮点。最省心方案：直接报一个 7–10 天南岛小团（含车+酒店+向导），或自驾改"皇后镇为 hub + 拼车游"。</div>
+    <div class="day"><div class="dh">Day 1 · 抵达基督城</div><div class="dd">机场 shuttle/接机到市区，休整。<span class="bus">🚌 机场→市区：SuperShuttle / 公交</span></div></div>
+    <div class="day"><div class="dh">Day 2 · 基督城 → 蒂卡波（观景火车/大巴）</div><div class="dd">乘 <b>Coastal Pacific</b>（夏季 CHC→皮克顿风景火车，部分班次）或 InterCity 大巴到蒂卡波，晚观星。<span class="bus">🚌 InterCity / 小团</span></div></div>
+    <div class="day"><div class="dh">Day 3 · 蒂卡波 → 库克山（拼车/一日游）</div><div class="dd">报蒂卡波出发的库克山/胡克谷小团，或乘 Alpine 观光巴士。<span class="bus">🚌 当地一日游</span></div></div>
+    <div class="day"><div class="dh">Day 4 · 蒂卡波 → 皇后镇（观光大巴）</div><div class="dd">乘 GreatSights / InterCity 风景大巴穿越 Lindis Pass 到皇后镇，入住为基地。<span class="bus">🚌 约 4–5h</span></div></div>
+    <div class="day"><div class="dh">Day 5 · 皇后镇（冒险日）</div><div class="dd">蹦极/喷射快艇/天空缆车，镇内步行可达。<span class="bus">🚌 镇内步行</span></div></div>
+    <div class="day"><div class="dh">Day 6 · 米尔福德峡湾一日游</div><div class="dd">报"皇后镇→米尔福德" coach + 游船一日游（含导游、不自己开，约 12–13h）。也可选 fly-cruise-fly 省时。<span class="bus">🚌 含接送一日游</span></div></div>
+    <div class="day"><div class="dh">Day 7 · 皇后镇周边（瓦纳卡/箭镇）</div><div class="dd">报瓦纳卡或 Glenorchy 半日游，看"哇哦大树"、魔多取景地。<span class="bus">🚌 当地半日游</span></div></div>
+    <div class="day"><div class="dh">Day 8 · 皇后镇 → 基督城（内陆段飞行）</div><div class="dd">飞 ZQN→CHC（约 1h），或乘风景大巴。<span class="bus">✈️ 国内段航班</span></div></div>
+    <div class="day"><div class="dh">Day 9 · 基督城 → 回国</div><div class="dd">机场 shuttle 前往机场。</div></div>
+    <div class="note">非自驾最稳的是直接订<b>南岛小团 tour</b>（如 7–9 天"基督城进出"环线），车+住宿+景点全包，免规划；缺点是行程固定、自由度低。自由行非自驾则靠 InterCity 大巴 + 各镇一日游拼凑。</div>
+    <h3>非自驾交通替代</h3>
+    <ul>
+      <li><b>风景火车</b>：TranzAlpine（CHC–格雷茅斯）、Coastal Pacific（CHC–皮克顿，夏季运营）。</li>
+      <li><b>长途大巴</b>：InterCity / GreatSights 覆盖主要城镇与景区。</li>
+      <li><b>景区分支</b>：米尔福德、库克山、瓦纳卡多以"当地一日游/拼车"到达。</li>
+      <li>凯库拉观鲸可从 CHC 乘 Coastal Pacific 或大巴一日往返。</li>
+    </ul>
+  </div>
+
+  <!-- ===================== TAB 4: 北岛自驾 ===================== -->
+  <div class="pane" id="t4">
+    <div class="fact"><b>北岛经典环线·自驾（9 天示例）</b> 落地奥克兰(AKL) 取车：AKL → 科罗曼德尔/陶朗加 → 罗托鲁瓦 → 怀托摩 → 霍比屯 → 陶波 → 惠灵顿。适合：地热/毛利文化/电影 IP、节奏轻松、车程短。</div>
+    <div class="day"><div class="dh">Day 1 · 抵达奥克兰</div><div class="dd">落地取车，市区天空塔、维亚达克港。<span class="drive">🚗 取车点：AKL 机场</span></div></div>
+    <div class="day"><div class="dh">Day 2 · 奥克兰 → 科罗曼德尔（热水沙滩）</div><div class="dd">东海岸半岛，挖沙池泡天然温泉，轻松海滨。<span class="drive">🚗 约 2.5h</span></div></div>
+    <div class="day"><div class="dh">Day 3 · 科罗曼德尔 → 罗托鲁瓦</div><div class="dd">地热之城：whakarewarewa 喷泉泥浆、波利尼西亚温泉。<span class="drive">🚗 约 2.5h</span></div></div>
+    <div class="day"><div class="dh">Day 4 · 罗托鲁瓦（文化日）</div><div class="dd">毛利文化村、红木森林、Wai-O-Tapu 彩色地热。<span class="drive">🚗 镇内</span></div></div>
+    <div class="day"><div class="dh">Day 5 · 罗托鲁瓦 → 怀托摩 → 霍比屯</div><div class="dd">上午萤火虫洞，下午玛塔玛塔霍比屯（《指环王》取景）。<span class="drive">🚗 罗托鲁瓦→怀托摩 1.5h → 霍比屯 1h</span></div></div>
+    <div class="day"><div class="dh">Day 6 · 霍比屯 → 陶波</div><div class="dd">新西兰最大湖、胡卡瀑布、湖景放松。<span class="drive">🚗 约 1h</span></div></div>
+    <div class="day"><div class="dh">Day 7 · 陶波 → 汤加里罗（火山徒步）</div><div class="dd">世界顶级一日步道 Tongariro Alpine Crossing（需好天气）；或轻松湖畔。<span class="drive">🚗 约 1h 到步道起点</span></div></div>
+    <div class="day"><div class="dh">Day 8 · 陶波 → 惠灵顿</div><div class="dd">首都，Te Papa 国家博物馆、维塔工作室(Weta)特效幕后。<span class="drive">🚗 约 4.5h（或飞）</span></div></div>
+    <div class="day"><div class="dh">Day 9 · 惠灵顿 → 奥克兰 → 回国</div><div class="dd">飞 WLG→AKL（1h）还车回国，或自驾返 AKL（约 8h，建议分两段）。<span class="drive">🚗 还车点：AKL 机场</span></div></div>
+    <div class="note">北岛车程普遍短、路况好，比南岛轻松；若不想跑惠灵顿那么远，可在陶波/罗托鲁瓦一带折返，省出天数泡温泉。</div>
+    <h3>自驾贴士</h3>
+    <ul>
+      <li>北岛多为铺装好路，城镇密集，加油/信号无忧。</li>
+      <li>汤加里罗 Alpine Crossing 是高强度徒步，需查天气、带足水与防风层。</li>
+      <li>霍比屯/萤火虫洞建议提前官网订票，旺季团次满。</li>
+    </ul>
+  </div>
+
+  <!-- ===================== TAB 5: 北岛非自驾 ===================== -->
+  <div class="pane" id="t5">
+    <div class="fact"><b>北岛·非自驾（9 天示例）</b> 以奥克兰/罗托鲁瓦为基地，用<b>一日游大巴 + 国内段航班 + 城市步行</b>覆盖。最省心：报北岛小团，或自由行靠 InterCity 大巴 + 景点 day tour。</div>
+    <div class="day"><div class="dh">Day 1 · 抵达奥克兰</div><div class="dd">机场 SkyBus/接机到市区，天空塔夜景。<span class="bus">🚌 SkyBus</span></div></div>
+    <div class="day"><div class="dh">Day 2 · 奥克兰 → 罗托鲁瓦（大巴/航班）</div><div class="dd">飞 AKL→ROT（约 45min）或 InterCity 大巴；下午波利尼西亚温泉。<span class="bus">✈️/🚌</span></div></div>
+    <div class="day"><div class="dh">Day 3 · 罗托鲁瓦（地热+文化日）</div><div class="dd">报 whakarewarewa / Wai-O-Tapu 一日游，晚毛利文化晚宴。<span class="bus">🚌 当地一日游</span></div></div>
+    <div class="day"><div class="dh">Day 4 · 怀托摩萤火虫洞（一日游）</div><div class="dd">奥克兰/罗托鲁瓦出发的萤火虫洞 day tour，地下蓝绿星光泛舟。<span class="bus">🚌 往返一日游</span></div></div>
+    <div class="day"><div class="dh">Day 5 · 霍比屯（一日游）</div><div class="dd">从罗托鲁瓦/汉密尔顿出发的霍比屯导览团。<span class="bus">🚌 当地一日游</span></div></div>
+    <div class="day"><div class="dh">Day 6 · 罗托鲁瓦 → 陶波</div><div class="dd">大巴到陶波，胡卡瀑布、湖景温泉。<span class="bus">🚌 InterCity</span></div></div>
+    <div class="day"><div class="dh">Day 7 · 陶波自由/汤加里罗观景</div><div class="dd">不徒步可乘观光飞机看火山口，或湖 cruises 放松。</div></div>
+    <div class="day"><div class="dh">Day 8 · 陶波 → 惠灵顿</div><div class="dd">飞或乘 Northern Explorer 观光火车（周末班次）/ InterCity 大巴到首都，Te Papa、Weta 工作室。<span class="bus">🚆/✈️/🚌</span></div></div>
+    <div class="day"><div class="dh">Day 9 · 惠灵顿 → 奥克兰 → 回国</div><div class="dd">飞 WLG→AKL 回国。</div></div>
+    <div class="note">非自驾最稳同样是<b>北岛小团</b>（含车+酒店+向导）；自由行则用"奥克兰/罗托鲁瓦一日游"拼出精华，惠灵顿靠国内段航班衔接，避免长途大巴疲劳。</div>
+    <h3>非自驾交通替代</h3>
+    <ul>
+      <li><b>国内航班</b>：AKL↔ROT、AKL↔WLG 密集，省时。</li>
+      <li><b>观光火车</b>：Northern Explorer（AKL–WLG，季节性/周末）。</li>
+      <li><b>大巴</b>：InterCity 连主要城镇；景点 day tour 由当地运营商发车。</li>
+      <li><b>城市内</b>：奥克兰/惠灵顿公交+步行即可，无需租车。</li>
+    </ul>
+  </div>
+
+  <footer>规划依据：新西兰移民局(immigration.govt.nz)与交通局(NZTA)公开规则，2026-10-15 整理 · 行程距离为估算，实际以导航为准</footer>
+</div>
+
+<script>
+  // 倒计时：按真实日期自动计算到 2026-12-11 的天数
+  (function(){
+    var depart = new Date(2026, 11, 11, 0, 0, 0); // 注意：月份 11 = 12 月
+    function pad(n){return n<10?'0'+n:n;}
+    function update(){
+      var now = new Date();
+      var diff = Math.ceil((depart - now) / 86400000);
+      var el = document.getElementById('count');
+      if(diff > 0){ el.textContent = diff + ' 天'; }
+      else if(diff === 0){ el.textContent = '就是今天！'; }
+      else { el.textContent = '已出发 ' + Math.abs(diff) + ' 天'; }
+    }
+    update();
+    // 每天刷新一次（打开页面即准确；跨天自动更新）
+    setInterval(update, 60*60*1000);
+
+    // Tab 切换
+    var tabs = document.querySelectorAll('#tabs .tab');
+    tabs.forEach(function(t){
+      t.addEventListener('click', function(){
+        tabs.forEach(function(x){x.classList.remove('on');});
+        t.classList.add('on');
+        var id = t.getAttribute('data-t');
+        document.querySelectorAll('.pane').forEach(function(p){
+          p.classList.toggle('on', p.id === id);
+        });
+        window.scrollTo({top:0});
+      });
+    });
+  })();
+</script>
+</body>
+</html>
